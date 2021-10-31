@@ -15,35 +15,11 @@ jobs:
         include:
           # Webstorm
           - imageName: projector-webstorm
-            tag: 2020.2
-            downloadLink: https://download.jetbrains.com/webstorm/WebStorm-2020.2.4.tar.gz
-          - imageName: projector-webstorm
             tag: 2020.3
             downloadLink: https://download.jetbrains.com/webstorm/WebStorm-2020.3.3.tar.gz
             isLatest: true
 
-          # Idea Community
-          - imageName: projector-idea-c
-            tag: 2019.3
-            downloadLink: https://download.jetbrains.com/idea/ideaIC-2019.3.5.tar.gz
-          - imageName: projector-idea-c
-            tag: 2020.1
-            downloadLink: https://download.jetbrains.com/idea/ideaIC-2020.1.4.tar.gz
-          - imageName: projector-idea-c
-            tag: 2020.2
-            downloadLink: https://download.jetbrains.com/idea/ideaIC-2020.2.4.tar.gz
-          - imageName: projector-idea-c
-            tag: 2020.3
-            downloadLink: https://download.jetbrains.com/idea/ideaIC-2020.3.4.tar.gz
-            isLatest: true
-
           # Idea Ultimate
-          - imageName: projector-idea-u
-            tag: 2019.3
-            downloadLink: https://download.jetbrains.com/idea/ideaIU-2019.3.5.tar.gz
-          - imageName: projector-idea-u
-            tag: 2020.2
-            downloadLink: https://download.jetbrains.com/idea/ideaIU-2020.2.4.tar.gz
           - imageName: projector-idea-u
             tag: 2020.3
             downloadLink: https://download.jetbrains.com/idea/ideaIU-2020.3.4.tar.gz
@@ -51,23 +27,11 @@ jobs:
 
           # CLion
           - imageName: projector-clion
-            tag: 2019.3
-            downloadLink: https://download.jetbrains.com/cpp/CLion-2019.3.6.tar.gz
-          - imageName: projector-clion
-            tag: 2020.2
-            downloadLink: https://download.jetbrains.com/cpp/CLion-2020.2.5.tar.gz
-          - imageName: projector-clion
             tag: 2020.3
             downloadLink: https://download.jetbrains.com/cpp/CLion-2020.3.4.tar.gz
             isLatest: true
 
           # Goland
-          - imageName: projector-goland
-            tag: 2019.3
-            downloadLink: https://download.jetbrains.com/go/goland-2019.3.4.tar.gz
-          - imageName: projector-goland
-            tag: 2020.2
-            downloadLink: https://download.jetbrains.com/go/goland-2020.2.4.tar.gz
           - imageName: projector-goland
             tag: 2020.3
             downloadLink: https://download.jetbrains.com/go/goland-2020.3.5.tar.gz
@@ -75,56 +39,24 @@ jobs:
 
           # Datagrip
           - imageName: projector-datagrip
-            tag: 2019.3
-            downloadLink: https://download.jetbrains.com/datagrip/datagrip-2019.3.5.tar.gz
-          - imageName: projector-datagrip
-            tag: 2020.2
-            downloadLink: https://download.jetbrains.com/datagrip/datagrip-2020.2.3.tar.gz
-          - imageName: projector-datagrip
             tag: 2020.3
             downloadLink: https://download.jetbrains.com/datagrip/datagrip-2020.3.2.tar.gz
             isLatest: true
 
           # PHPStorm
           - imageName: projector-phpstorm
-            tag: 2019.3
-            downloadLink: https://download.jetbrains.com/webide/PhpStorm-2019.3.4.tar.gz
-          - imageName: projector-phpstorm
-            tag: 2020.2
-            downloadLink: https://download.jetbrains.com/webide/PhpStorm-2020.2.4.tar.gz
-          - imageName: projector-phpstorm
             tag: 2020.3
             downloadLink: https://download.jetbrains.com/webide/PhpStorm-2020.3.3.tar.gz
             isLatest: true
 
-          # Pycharm community
-          - imageName: projector-pycharm-c
-            tag: 2019.3
-            downloadLink: https://download.jetbrains.com/python/pycharm-community-2019.3.5.tar.gz
-          - imageName: projector-pycharm-c
-            tag: 2020.2
-            downloadLink: https://download.jetbrains.com/python/pycharm-community-2020.2.5.tar.gz
-          - imageName: projector-pycharm-c
-            tag: 2020.3
-            downloadLink: https://download.jetbrains.com/python/pycharm-community-2020.3.5.tar.gz
-            isLatest: true
 
           # Pycharm professional
-          - imageName: projector-pycharm-p
-            tag: 2019.3
-            downloadLink: https://download.jetbrains.com/python/pycharm-professional-2019.3.5.tar.gz
-          - imageName: projector-pycharm-p
-            tag: 2020.2
-            downloadLink: https://download.jetbrains.com/python/pycharm-professional-2020.2.5.tar.gz
           - imageName: projector-pycharm-p
             tag: 2020.3
             downloadLink: https://download.jetbrains.com/python/pycharm-professional-2020.3.5.tar.gz
             isLatest: true
 
           # Rider
-          - imageName: projector-rider
-            tag: 2020.2
-            downloadLink: https://download.jetbrains.com/rider/JetBrains.Rider-2020.2.5.tar.gz
           - imageName: projector-rider
             tag: 2020.3
             downloadLink: https://download.jetbrains.com/rider/JetBrains.Rider-2020.3.4.tar.gz
