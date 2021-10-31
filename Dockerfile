@@ -74,6 +74,8 @@ RUN true \
     && apt-get install git bash-completion -y \
 # packages for IDEA (to disable warnings):
     && apt-get install procps -y \
+# packages sudo:
+    && apt-get install sudo -y \
 # clean apt to reduce image size:
     && rm -rf /var/lib/apt/lists/* \
     && rm -rf /var/cache/apt
@@ -112,7 +114,10 @@ RUN true \
     && useradd -m -d /home/$PROJECTOR_USER_NAME -s /bin/bash $PROJECTOR_USER_NAME \
     && chown -R $PROJECTOR_USER_NAME.$PROJECTOR_USER_NAME /home/$PROJECTOR_USER_NAME \
     && chown -R $PROJECTOR_USER_NAME.$PROJECTOR_USER_NAME $PROJECTOR_DIR/ide/bin \
-    && chown $PROJECTOR_USER_NAME.$PROJECTOR_USER_NAME run.sh
+    && chown $PROJECTOR_USER_NAME.$PROJECTOR_USER_NAME run.sh \
+    && usermod -aG sudo $PROJECTOR_USER_NAME \
+    && echo "$PROJECTOR_USER_NAME ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
+
 
 USER $PROJECTOR_USER_NAME
 ENV HOME /home/$PROJECTOR_USER_NAME
