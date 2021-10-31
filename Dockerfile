@@ -74,8 +74,8 @@ RUN true \
     && apt-get install git bash-completion -y \
 # packages for IDEA (to disable warnings):
     && apt-get install procps -y \
-# packages sudo:
-    && apt-get install sudo -y \
+# packages others:
+    && apt-get install sudo curl unzip zip -y \
 # clean apt to reduce image size:
     && rm -rf /var/lib/apt/lists/* \
     && rm -rf /var/cache/apt
@@ -123,5 +123,13 @@ USER $PROJECTOR_USER_NAME
 ENV HOME /home/$PROJECTOR_USER_NAME
 
 EXPOSE 8887
+
+RUN true \
+# Any command which returns non-zero exit code will cause this shell script to exit immediately:
+    && set -e \
+# Activate debugging to show execution details: all commands will be printed before execution
+    && set -x \
+# install sdkman:
+    && curl -s "https://get.sdkman.io" | bash
 
 CMD ["bash", "-c", "/run.sh"]
